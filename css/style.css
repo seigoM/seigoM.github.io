@@ -132,6 +132,9 @@ a:hover { color: var(--c-name); }
 }
 .profile {
   margin: 72px 0 0;
+}
+.profile:first-child {
+  margin-top: 0;
   font-size: var(--fs-profile);
   line-height: 1.9;
   color: #666666;
