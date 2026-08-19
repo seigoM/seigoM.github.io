@@ -10,12 +10,12 @@
 
   /* タイポ — rem指定でブラウザの文字サイズ設定に追従(1rem = 既定16px) */
   --font: "Helvetica Neue", Helvetica, Arial, "Noto Sans JP", sans-serif;
-  --fs-copy:    0.6875rem;  /* 11px相当 */
-  --fs-series:  0.8125rem;  /* 13px相当 / letter-spacing: .06em */
-  --fs-nav:     0.875rem;   /* 14px相当 */
-  --fs-name:    0.875rem;   /* 14px相当 / letter-spacing: .04em */
-  --fs-profile: 0.875rem;   /* 14px相当 / line-height: 1.9 */
-  --fs-body:    0.9375rem;  /* 15px相当 / line-height: 2.1 / PCで1rem */
+  --fs-copy:    0.8125rem;  /* 13px相当 */
+  --fs-series:  0.9375rem;  /* 15px相当 / letter-spacing: .06em */
+  --fs-nav:     1rem;       /* 16px相当 */
+  --fs-name:    1rem;       /* 16px相当 / letter-spacing: .04em */
+  --fs-profile: 1rem;       /* 16px相当 / line-height: 1.9 */
+  --fs-body:    1.0625rem;  /* 17px相当 / line-height: 2.1 / PCで1.125rem */
 
   /* 余白・レイアウト */
   --pad:      16px;        /* 左右余白 */
@@ -28,7 +28,7 @@
     --pad: 40px;
     --gap: 240px;
     --top-off: 130px;
-    --fs-body: 1rem;
+    --fs-body: 1.125rem;
     --header-h: 70px;
   }
 }
