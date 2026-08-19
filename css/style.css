@@ -8,14 +8,14 @@
   --c-copy:     #b8b8b8;   /* © */
   --c-lb:       #000000;   /* ライトボックス背景 */
 
-  /* タイポ */
+  /* タイポ — rem指定でブラウザの文字サイズ設定に追従(1rem = 既定16px) */
   --font: "Helvetica Neue", Helvetica, Arial, "Noto Sans JP", sans-serif;
-  --fs-copy:    10px;
-  --fs-series:  11px;      /* letter-spacing: .06em */
-  --fs-nav:     12px;
-  --fs-name:    13px;      /* letter-spacing: .04em */
-  --fs-profile: 13px;      /* line-height: 1.9 */
-  --fs-body:    15px;      /* line-height: 2.1 / PCで16px */
+  --fs-copy:    0.6875rem;  /* 11px相当 */
+  --fs-series:  0.8125rem;  /* 13px相当 / letter-spacing: .06em */
+  --fs-nav:     0.875rem;   /* 14px相当 */
+  --fs-name:    0.875rem;   /* 14px相当 / letter-spacing: .04em */
+  --fs-profile: 0.875rem;   /* 14px相当 / line-height: 1.9 */
+  --fs-body:    0.9375rem;  /* 15px相当 / line-height: 2.1 / PCで1rem */
 
   /* 余白・レイアウト */
   --pad:      16px;        /* 左右余白 */
@@ -28,7 +28,7 @@
     --pad: 40px;
     --gap: 240px;
     --top-off: 130px;
-    --fs-body: 16px;
+    --fs-body: 1rem;
     --header-h: 70px;
   }
 }
@@ -116,7 +116,7 @@ a:hover { color: var(--c-name); }
   text-align: center;
 }
 .back a {
-  font-size: 11px;
+  font-size: var(--fs-series);
   letter-spacing: .06em;
   color: var(--c-link);
   text-decoration: underline;
@@ -143,7 +143,7 @@ a:hover { color: var(--c-name); }
   margin: 56px 0 0;
   display: flex;
   gap: 24px;
-  font-size: 12px;
+  font-size: var(--fs-nav);
   letter-spacing: .04em;
 }
 .sns a {
